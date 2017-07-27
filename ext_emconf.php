@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "static_info_tables_ja".
 #
-# Auto generated 17-09-2015 06:54
+# Auto generated 08-08-2015 06:51
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => '(ja) language pack for the Static Info Tables providing localized names for countries, currencies and so on.',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '2.0.0',
+	'version' => '2.0.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
