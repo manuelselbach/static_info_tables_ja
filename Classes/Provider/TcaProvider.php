@@ -1,5 +1,4 @@
 <?php
-
 namespace Mselbach\StaticInfoTablesJa\Provider;
 
 /***************************************************************
@@ -28,7 +27,7 @@ namespace Mselbach\StaticInfoTablesJa\Provider;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-use Mselbach\StaticInfoTablesRu\Extension;
+use Mselbach\StaticInfoTablesJa\Extension;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 class TcaProvider
