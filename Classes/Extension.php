@@ -1,5 +1,4 @@
 <?php
-
 namespace Mselbach\StaticInfoTablesJa;
 
 /***************************************************************
