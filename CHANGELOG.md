@@ -1,5 +1,12 @@
 # Change Log
 
+## [6.4.1](https://github.com/manuelselbach/static_info_tables_ja/tree/6.4.1) (2017-07-31)
+
+* Fix nameing within model
+
+[Full Changelog](https://github.com/manuelselbach/static_info_tables_ja/compare/6.4.0...6.4.1)
+
+
 ## [6.4.0](https://github.com/manuelselbach/static_info_tables_ja/tree/6.4.0) (2017-07-31)
 
 * Update to be compatible with TYPO3 8.7 LTS
