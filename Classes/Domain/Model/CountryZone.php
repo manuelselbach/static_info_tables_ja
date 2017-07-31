@@ -34,13 +34,13 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 class CountryZone extends AbstractEntity
 {
     /**
-     * russian name of the country zone
+     * japanese name of the country zone
      * @var string
      */
     protected $nameJa = '';
 
     /**
-     * Sets the russian name.
+     * Sets the japanese name.
      *
      * @param string $nameJa
      *
@@ -48,11 +48,11 @@ class CountryZone extends AbstractEntity
      */
     public function setNameJa($nameJa)
     {
-        $this->nameRu = $nameJa;
+        $this->nameJa = $nameJa;
     }
 
     /**
-     * Returns russian name. If empty returns the localName.
+     * Returns japanese name. If empty returns the localName.
      *
      * @return string
      */

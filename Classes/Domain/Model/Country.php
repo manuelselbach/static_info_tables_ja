@@ -34,13 +34,13 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 class Country extends AbstractEntity
 {
     /**
-     * The russian short name
+     * The japanese short name
      * @var string
      */
     protected $shortNameJa = '';
 
     /**
-     * Sets the russian short name.
+     * Sets the japanese short name.
      *
      * @param string $shortNameJa
      *
@@ -48,11 +48,11 @@ class Country extends AbstractEntity
      */
     public function setShortNameJa($shortNameJa)
     {
-        $this->shortNameRu = $shortNameJa;
+        $this->shortNameJa = $shortNameJa;
     }
 
     /**
-     * Gets the russian short name.
+     * Gets the japanese short name.
      *
      * @return string
      */

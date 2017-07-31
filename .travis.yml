@@ -62,8 +62,6 @@ after_script:
       curl -sSL https://raw.githubusercontent.com/alrra/travis-after-all/1.4.4/lib/travis-after-all.js | node
       if [ $? -eq 0 ]; then
         # Cleanup before we upload
-        composer require --dev typo3/cms ^8.7 --update-with-dependencies
-        composer require --dev namelesscoder/typo3-repository-client ^1.3
         git reset --hard HEAD && git clean -fx
         composer extension-cleanup-for-release
 
