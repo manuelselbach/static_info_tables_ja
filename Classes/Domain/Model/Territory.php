@@ -33,13 +33,13 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 class Territory extends AbstractEntity
 {
     /**
-     * russian name of the territory
+     * japanese name of the territory
      * @var string
      */
     protected $nameJa = '';
 
     /**
-     * Sets the russian name of the territory
+     * Sets the japanese name of the territory
      *
      * @param string $nameJa
      *
@@ -51,7 +51,7 @@ class Territory extends AbstractEntity
     }
 
     /**
-     * Returns the russian name of the territory
+     * Returns the japanese name of the territory
      *
      * @return string
      */

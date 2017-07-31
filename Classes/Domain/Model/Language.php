@@ -34,13 +34,13 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 class Language extends AbstractEntity
 {
     /**
-     * russian name of the language
+     * japanese name of the language
      * @var string
      */
     protected $nameJa = '';
 
     /**
-     * Sets the russian name of the language
+     * Sets the japanese name of the language
      *
      * @param string $nameJa
      *
@@ -52,7 +52,7 @@ class Language extends AbstractEntity
     }
 
     /**
-     * Gets the russian name of the language
+     * Gets the japanese name of the language
      *
      * @return string
      */

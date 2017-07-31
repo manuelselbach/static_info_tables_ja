@@ -34,19 +34,19 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 class Currency extends AbstractEntity
 {
     /**
-     * russian name of the currency
+     * japanese name of the currency
      * @var string
      */
     protected $nameJa = '';
 
     /**
-     * russian name of the currency subdivision unit
+     * japanese name of the currency subdivision unit
      * @var string
      */
     protected $subdivisionNameJa = '';
 
     /**
-     * Sets the russian name of the currency
+     * Sets the japanese name of the currency
      *
      * @param string $nameJa
      *
@@ -58,7 +58,7 @@ class Currency extends AbstractEntity
     }
 
     /**
-     * Gets the russian name of the currency
+     * Gets the japanese name of the currency
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class Currency extends AbstractEntity
     }
 
     /**
-     * Sets the russian name of the currency subdivision
+     * Sets the japanese name of the currency subdivision
      *
      * @param string $subdivisionNameJa
      *
@@ -80,7 +80,7 @@ class Currency extends AbstractEntity
     }
 
     /**
-     * Gets the russian name of the currency subdivision
+     * Gets the japanese name of the currency subdivision
      *
      * @return string
      */
