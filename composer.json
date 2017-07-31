@@ -1,0 +1,66 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org"
+    }
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "Static Info Tables"
+  ],
+  "name": "mselbach/static-info-tables-ja",
+  "description": "(ja) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
+  "version": "6.4.0",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Manuel Selbach",
+      "role": "Developer"
+    }
+  ],
+  "replace": {
+    "static_info_tables_ru": "self.version",
+    "typo3-ter/static-info-tables-ru": "self.version"
+  },
+  "require": {
+    "php": ">=5.6",
+    "typo3/cms": ">=7.6,<9.0",
+    "sjbr/static-info-tables": "6.4.*"
+  },
+
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.8",
+    "phpunit/phpunit": "^5.6",
+    "nimut/testing-framework": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mselbach\\StaticInfoTablesJa\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mselbach\\StaticInfoTablesJa\\Tests\\": "Tests"
+    }
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  },
+  "scripts": {
+    "extension-cleanup-for-release": [
+      "rm -rf Tests/",
+      "rm .gitignore",
+      "rm .travis.yml",
+      "rm composer.lock"
+    ]
+  }
+}

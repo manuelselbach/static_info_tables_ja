@@ -1,39 +1,26 @@
 <?php
 
-########################################################################
-# Extension Manager/Repository config file for ext "static_info_tables_ja".
-#
-# Auto generated 08-08-2015 06:51
-#
-# Manual updates:
-# Only the data in the array - everything else is removed by next
-# writing. "version" and "dependencies" must not be touched!
-########################################################################
-
-$EM_CONF[$_EXTKEY] = array(
-	'title' => 'Static Info Tables (ja)',
-	'description' => '(ja) language pack for the Static Info Tables providing localized names for countries, currencies and so on.',
-	'category' => 'misc',
-	'shy' => 0,
-	'version' => '2.0.1',
-	'dependencies' => '',
-	'conflicts' => '',
-	'priority' => '',
-	'loadOrder' => '',
-	'TYPO3_version' => '4.0-0.0.0',
-	'PHP_version' => '4.1.0-0.0.0',
-	'module' => '',
-	'state' => 'stable',
-	'uploadfolder' => 0,
-	'createDirs' => '',
-	'modify_tables' => 'static_countries,static_languages,static_currencies,static_territories',
-	'clearcacheonload' => 0,
-	'lockType' => '',
-	'author' => 'Manuel Rego Casasnovas [Igalia]',
-	'author_email' => 'mrego@igalia.com',
-	'author_company' => 'Igalia - http://www.igalia.com',
-	'CGLcompliance' => '',
-	'CGLcompliance_note' => '',
-);
-
-?>
+$EM_CONF[$_EXTKEY] = [
+    'title' => 'Static Info Tables (ja)',
+    'description' => '(ja) language pack for the Static Info Tables providing localized names for countries, 
+                       currencies and so on.',
+    'category' => 'misc',
+    'version' => '6.4.0',
+    'dependencies' => '',
+    'state' => 'stable',
+    'uploadfolder' => true,
+    'createDirs' => '',
+    'clearcacheonload' => true,
+    'author' => 'Manuel Selbach',
+    'author_email' => 'manuel_selbach@yahoo.de',
+    'author_company' => '',
+    'constraints' => [
+        'depends' => [
+            'typo3' => '7.6.0-8.7.99',
+            'static_info_tables' => '6.4.0-6.4.99',
+            'php' => '5.6.0-0.0.0',
+        ],
+        'conflicts' => [],
+        'suggests' => [],
+    ],
+];
