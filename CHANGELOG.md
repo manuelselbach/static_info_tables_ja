@@ -1,11 +1,14 @@
 # Change Log
 
+## [6.4.2](https://github.com/manuelselbach/static_info_tables_ja/tree/6.4.2) (2018-03-07)
+[Full Changelog](https://github.com/manuelselbach/static_info_tables_ja/compare/6.4.1...6.4.2)
+
+**Closed issues:**
+
+- Please rename ext\_tables\_static\_update.sql to ext\_tables\_static+adt.sql [\#1](https://github.com/manuelselbach/static_info_tables_ja/issues/1)
+
 ## [6.4.1](https://github.com/manuelselbach/static_info_tables_ja/tree/6.4.1) (2017-07-31)
-
-* Fix nameing within model
-
 [Full Changelog](https://github.com/manuelselbach/static_info_tables_ja/compare/6.4.0...6.4.1)
-
 
 ## [6.4.0](https://github.com/manuelselbach/static_info_tables_ja/tree/6.4.0) (2017-07-31)
 
