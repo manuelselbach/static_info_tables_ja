@@ -49,6 +49,10 @@
     }
   },
   "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/static_info_tables_ja ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/static_info_tables_ja"
+    ],
     "extension-cleanup-for-release": [
       "rm -rf Tests/",
       "rm .gitignore",
