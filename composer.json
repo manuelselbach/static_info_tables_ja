@@ -24,7 +24,7 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.8",
-    "nimut/testing-framework": "2.x-dev || || 3.x-dev || 4.x-dev"
+    "nimut/testing-framework": "2.x-dev || 3.x-dev || 4.x-dev"
   },
   "autoload": {
     "psr-4": {
