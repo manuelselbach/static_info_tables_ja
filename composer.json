@@ -14,17 +14,16 @@
     }
   ],
   "replace": {
-    "static_info_tables_ja": "self.version",
-    "typo3-ter/static-info-tables-ja": "self.version"
+    "mselbach/static-info-tables-ja": "self.version"
   },
   "require": {
-    "php": ">=7.0",
-    "typo3/cms-core": "^8.7 || ^9.5",
-    "sjbr/static-info-tables": "^6.7"
+    "php": ">=7.2",
+    "typo3/cms-core": "^9.5 || ^10.4",
+    "sjbr/static-info-tables": "^6.9"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.8",
-    "nimut/testing-framework": "2.x-dev || 3.x-dev || 4.x-dev"
+    "nimut/testing-framework": "2.x-dev || 3.x-dev || 4.x-dev || ^5.0"
   },
   "autoload": {
     "psr-4": {
@@ -54,9 +53,9 @@
     ],
     "extension-cleanup-for-release": [
       "rm -rf Tests/",
-      "rm .gitignore",
-      "rm .travis.yml",
-      "rm composer.lock"
+      "rm -f .gitignore",
+      "rm -f .travis.yml",
+      "rm -f composer.lock"
     ]
   }
 }
