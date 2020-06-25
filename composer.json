@@ -18,13 +18,13 @@
     "typo3-ter/static-info-tables-ja": "self.version"
   },
   "require": {
-    "php": ">=5.6",
-    "typo3/cms-core": "^7.6 || ^8.7",
-    "sjbr/static-info-tables": "^6.5"
+    "php": ">=7.0",
+    "typo3/cms-core": "^8.7 || ^9.5",
+    "sjbr/static-info-tables": "^6.7"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.8",
-    "nimut/testing-framework": "2.x-dev || 4.x-dev"
+    "nimut/testing-framework": "2.x-dev || 3.x-dev || 4.x-dev"
   },
   "autoload": {
     "psr-4": {
@@ -43,13 +43,14 @@
   "extra": {
     "typo3/cms": {
       "cms-package-dir": "{$vendor-dir}/typo3/cms",
-      "web-dir": ".Build/Web"
+      "app-dir": ".Build",
+      "web-dir": ".Build/public"
     }
   },
   "scripts": {
     "post-autoload-dump": [
-      "mkdir -p .Build/Web/typo3conf/ext/",
-      "[ -L .Build/Web/typo3conf/ext/static_info_tables_ja ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/static_info_tables_ja"
+      "mkdir -p .Build/public/typo3conf/ext/",
+      "[ -L .Build/public/typo3conf/ext/static_info_tables_ja ] || ln -snvf ../../../../. .Build/public/typo3conf/ext/static_info_tables_ja"
     ],
     "extension-cleanup-for-release": [
       "rm -rf Tests/",
