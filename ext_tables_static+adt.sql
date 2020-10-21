@@ -270,7 +270,18 @@ UPDATE static_countries SET cn_short_ja="パレスチナ自治区" WHERE cn_iso_
 UPDATE static_countries SET cn_short_ja="セルビアモンテネグロ" WHERE cn_iso_2="CS";
 UPDATE static_countries SET cn_short_ja="アランド島" WHERE cn_iso_2="AX";
 UPDATE static_countries SET cn_short_ja="ハード島・マクドナルド諸島" WHERE cn_iso_2="HM";
-
+UPDATE static_countries SET cn_short_ja="モンテネグロ" WHERE cn_iso_2="ME";
+UPDATE static_countries SET cn_short_ja="セルビア共和国" WHERE cn_iso_2="RS";
+UPDATE static_countries SET cn_short_ja="ジャージー" WHERE cn_iso_2="JE";
+UPDATE static_countries SET cn_short_ja="ガーンジー" WHERE cn_iso_2="GG";
+UPDATE static_countries SET cn_short_ja="マン島" WHERE cn_iso_2="IM";
+UPDATE static_countries SET cn_short_ja="セント・マーチン島" WHERE cn_iso_2="MF";
+UPDATE static_countries SET cn_short_ja="サン・バルテルミー島" WHERE cn_iso_2="BL";
+UPDATE static_countries SET cn_short_ja="ボネール、シント・ユースタティウスおよびサバ" WHERE cn_iso_2="BQ";
+UPDATE static_countries SET cn_short_ja="キュラソー" WHERE cn_iso_2="CW";
+UPDATE static_countries SET cn_short_ja="シント・マールテン" WHERE cn_iso_2="SX";
+UPDATE static_countries SET cn_short_ja="南スーダン共和国" WHERE cn_iso_2="SS";
+UPDATE static_countries SET cn_short_ja="コソボ共和国" WHERE cn_iso_2="XK";
 
 ## static_languages
 UPDATE static_languages SET lg_name_ja="アブハーズ語" WHERE lg_iso_2="AB" AND lg_country_iso_2="";
