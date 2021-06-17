@@ -1,7 +1,7 @@
 # ***************************************************************************************
 # Translate currency labels in suggestions
 # ***************************************************************************************
-[language = *fr*]
+[siteLanguage("twoLetterIsoCode") == "ja"]
 	TCEFORM.sys_language.static_lang_isocode.suggest.default.additionalSearchFields = lg_name_ja
 	TCEFORM.sys_language.static_lang_isocode.suggest.default.orderBy = lg_name_ja
 	TCEFORM.static_countries.cn_currency_uid.suggest.default.additionalSearchFields = cu_name_ja
