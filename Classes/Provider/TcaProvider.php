@@ -39,10 +39,10 @@ class TcaProvider
     protected static $LL = 'LLL:EXT:%s/Resources/Private/Language/locallang_db.xlf:%s_item.%s';
 
     /**
-     * @param $additionalFields
-     * @param $dataSetName
+     * @param array $additionalFields
+     * @param string $dataSetName
      */
-    public static function generateAndRegisterTca($additionalFields, $dataSetName)
+    public static function generateAndRegisterTca(array $additionalFields, string $dataSetName): void
     {
         foreach ($additionalFields as $sourceField => $destField) {
             $additionalColumns = [];

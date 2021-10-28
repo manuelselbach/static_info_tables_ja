@@ -1,16 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 defined('TYPO3_MODE') || die();
 
-$initialize = function ($dataSetName) {
+(static function (string $dataSetName) {
     $additionalFields = [
-        'zn_name_en' => 'zn_name_ja',
+        'zn_name_en' => 'zn_name_ja'
     ];
 
     \Mselbach\StaticInfoTablesJa\Provider\TcaProvider::generateAndRegisterTca(
         $additionalFields,
         $dataSetName
     );
-};
-$initialize('static_country_zones');
-unset($initialize);
+})('static_country_zones');

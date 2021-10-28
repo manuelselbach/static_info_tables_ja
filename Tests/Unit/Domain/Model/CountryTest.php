@@ -12,7 +12,7 @@ class CountryTest extends UnitTestCase
     /**
      * @test
      */
-    public function testDummy()
+    public function testDummy(): void
     {
     }
 }

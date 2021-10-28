@@ -1,16 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 defined('TYPO3_MODE') || die();
 
-$initialize = function ($dataSetName) {
+(static function (string $dataSetName) {
     $additionalFields = [
-        'tr_name_en' => 'tr_name_ja',
+        'tr_name_en' => 'tr_name_ja'
     ];
 
     \Mselbach\StaticInfoTablesJa\Provider\TcaProvider::generateAndRegisterTca(
         $additionalFields,
         $dataSetName
     );
-};
-$initialize('static_territories');
-unset($initialize);
+})('static_territories');
