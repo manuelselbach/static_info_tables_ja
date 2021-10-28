@@ -1,5 +1,7 @@
 <?php
+
 namespace Mselbach\StaticInfoTablesJa\Tests\Unit\Domain\Model;
+
 use Nimut\TestingFramework\TestCase\UnitTestCase;
 
 /**
