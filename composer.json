@@ -57,6 +57,10 @@
       "mkdir -p .Build/public/typo3conf/ext/",
       "[ -L .Build/public/typo3conf/ext/static_info_tables_ja ] || ln -snvf ../../../../. .Build/public/typo3conf/ext/static_info_tables_ja"
     ],
+    "analyse": [
+      "[ -e .Build/bin/phpstan ] || composer update",
+      ".Build/bin/phpstan analyse"
+    ],
     "extension-cleanup-for-release": [
       "rm -rf Tests/",
       "rm -f .gitignore",
