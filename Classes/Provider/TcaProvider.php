@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Mselbach\StaticInfoTablesJa\Provider;
 
 use Mselbach\StaticInfoTablesJa\Extension;
