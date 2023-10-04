@@ -2,11 +2,8 @@
 
 namespace Mselbach\StaticInfoTablesJa\Tests\Unit\Domain\Model;
 
-use Nimut\TestingFramework\TestCase\UnitTestCase;
+use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
-/**
- * CountryTest
- */
 class CountryTest extends UnitTestCase
 {
     /**
