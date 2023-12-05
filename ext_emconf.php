@@ -5,7 +5,7 @@ $EM_CONF[$_EXTKEY] = [
     'description' => '(ja) language pack for the Static Info Tables providing localized names for countries, 
                        currencies and so on.',
     'category' => 'misc',
-    'version' => '11.5.0',
+    'version' => '12.4.0',
     'state' => 'stable',
     'uploadfolder' => false,
     'createDirs' => '',
@@ -15,9 +15,9 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => '',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99',
-            'static_info_tables' => '11.5.0-11.5.99',
-            'php' => '7.4.0-0.0.0',
+            'typo3' => '12.4.0-12.4.99',
+            'static_info_tables' => '12.4.0-12.4.99',
+            'php' => '8.1.0-0.0.0',
         ],
         'conflicts' => [],
         'suggests' => [],
