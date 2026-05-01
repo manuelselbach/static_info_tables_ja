@@ -10,10 +10,10 @@
 setUpDockerComposeDotEnv() {
     # Delete possibly existing local .env file if exists
     [ -e .env ] && rm .env
-    # Set up a new .env file for docker compose
+    # Set up a new .env file for docker-compose
     echo "COMPOSE_PROJECT_NAME=local" >> .env
     # To prevent access rights of files created by the testing, the docker image later
-    # runs with the same user that is currently executing the script. docker compose can't
+    # runs with the same user that is currently executing the script. docker-compose can't
     # use $UID directly itself since it is a shell variable and not an env variable, so
     # we have to set it explicitly here.
     echo "HOST_UID=`id -u`" >> .env
@@ -102,9 +102,11 @@ Options:
 EOF
 
 # Test if docker compose exists, else exit out with error
-if ! type "docker compose" > /dev/null; then
-  echo "This script relies on docker and docker compose. Please install" >&2
-  exit 1
+docker compose &>/dev/null # sending output to /dev/null because we don't want it printed
+
+if [ $? -ne 0 ]; then
+    echo "This script relies on docker and docker compose. Please install" >&2
+    exit 1
 fi
 
 # Go to the directory this script is located, so everything else is relative
@@ -112,7 +114,7 @@ fi
 THIS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cd "$THIS_SCRIPT_DIR" || exit 1
 
-# Go to directory that contains the local docker-compose.yml file
+# Go to directory that contains the local docker compose.yml file
 cd ../testing-docker || exit 1
 
 # Option defaults
